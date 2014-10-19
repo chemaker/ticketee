@@ -14,10 +14,14 @@
 </head>
 <body>
 
+  <% user = current_user %>
+
   <nav>
     <ul>
+      <li><%= link_to "Projects", projects_path %></li>
       <li><%= link_to "Sign up", new_user_path %></li>
       <li><%= link_to "Sign in", signin_path %></li>
+      <li><%= link_to "View profile", user %></li>
     </ul>
   </nav>
 
